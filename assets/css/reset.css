@@ -1,0 +1,5 @@
+/* This is to reset undesirable default configurations, I'm choosing not to use a global reset and just focus on the specific items I use (per recomendation from the meyer website: http://meyerweb.com/eric/tools/css/reset/ ) */
+a {
+  text-decoration: none; /* remove underlines */
+  color: inherit; /* use parent's color */
+}

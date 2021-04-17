@@ -1,0 +1,67 @@
+/* universal selector - set box style */
+* {
+  box-sizing: border-box;
+
+  /* for test purposes */
+  border: 1px dotted black;
+}
+
+body {
+  /* set up the screen */
+  /* height: 100vh; */
+  width: 100%;
+  margin: 0;
+  padding: 60px 0; /* padding will allow a fixed header and footer */
+  background-color: cornflowerblue;
+
+  /* make a flex container */
+  display: flex;
+  /* show items vertically -- these are the main containers */
+  flex-direction: column;
+
+  /* do this so the header can be fixed */
+  position: relative;
+}
+
+/* set common style for header footer */
+header,
+footer {
+  background-color: blue;
+  height: 60px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  /* fix to the top of the page */
+  position: fixed;
+  top: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+/************************* Tablet view port settings  *************************/
+@media screen and (max-width: 992px) {
+  header {
+    background-color: darkgreen;
+  }
+}
+
+/*********************** Large phone view port settings ***********************/
+@media screen and (max-width: 768px) {
+  header {
+    background-color: green;
+  }
+}
+
+/*********************** Small phone view port settings ***********************/
+@media screen and (max-width: 576px) {
+  header {
+    background-color: lightgreen;
+  }
+}
