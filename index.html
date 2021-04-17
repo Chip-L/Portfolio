@@ -19,10 +19,11 @@
         <a href="#">Contact Me</a>
       </nav>
     </header>
-
     <main>
       <section id="aboutMe" class="container aboutMe">
-        <h2 class="heading">About Me</h1>
+        <section class="heading">
+          <h2>About Me</h2>
+        </section>
         <section class="content">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet alias
@@ -40,13 +41,63 @@
       </section>
 
       <section id="myWork" class="container myWork">
-        <!-- Is it better to use an h1 setting or a section here? or both? -->
-        <h2 class="heading">My Work</h1>
-        <section class="content"></section>
+        <section class="heading">
+          <h2>My Work</h2>
+        </section>
+        <section class="content">
+          <ul class="container">
+            <li>
+              <!-- this is being done as a figure with the idea that I can use the fig caption to display the added information and float it above the image -->
+              <figure>
+                <a href="#"
+                  ><img src="./assets/images/completed-page.png" alt=""
+                /></a>
+                <figcaption>
+                  <ul>
+                    <li>Horiseon Refactor</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <!-- this is being done as a figure with the idea that I can use the fig caption to display the added information and float it above the image -->
+              <figure>
+                <a
+                  href="https://chip-l.github.io/HoriseonRefactor/"
+                  target="_blank"
+                  ><img src="./assets/images/completed-page.png" alt=""
+                /></a>
+                <figcaption>
+                  <ul>
+                    <li>Horiseon Refactor</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <!-- this is being done as a figure with the idea that I can use the fig caption to display the added information and float it above the image -->
+              <figure>
+                <a href="#"
+                  ><img src="./assets/images/completed-page.png" alt=""
+                /></a>
+                <figcaption>
+                  <ul>
+                    <li>Horiseon Refactor</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
       </section>
 
       <section id="contactMe" class="container contactMe">
-        <h2 class="heading">Contact Me</h1>
+        <section class="heading">
+          <h2>Contact Me</h2>
+        </section>
         <section class="content">
           <ul class="container">
             <li>720-289-4751</li>
@@ -60,6 +111,5 @@
         </section>
       </section>
     </main>
-    <!-- <footer></footer> -->
   </body>
 </html>

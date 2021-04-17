@@ -7,13 +7,6 @@
 }
 
 body {
-  /* set up the screen */
-  /* height: 100vh; */
-  width: 100%;
-  margin: 0;
-  padding-top: 60px; /* padding will allow a fixed header */
-  background-color: rgb(160, 193, 255);
-
   /* make a flex container */
   display: flex;
   /* show items vertically -- these are the main containers */
@@ -21,6 +14,16 @@ body {
 
   /* do this so the header can be fixed */
   position: relative;
+
+  /* set up the screen */
+  width: 100%;
+  /* height: 100vh; */
+  margin: 0;
+  padding-top: 60px; /* padding will allow a fixed header */
+  background-color: rgb(160, 193, 255);
+  color: antiquewhite;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 /* set common style for header footer */
@@ -47,24 +50,51 @@ header {
 .heading {
   /* won't grow, but will shrink - basis is 10% but there is a min/max on sizing so it won't grow too much or lose the line boundaries*/
   flex: 0 1 10%;
-  max-width: 150px;
-  min-width: 90px;
+  max-width: 10%;
+  min-width: 5%;
+  text-align: right;
+  padding: 0.5%;
+
+  border-right: 5px solid;
 
   /* align at the top of the section */
   align-self: flex-start;
 }
+
 .content {
   flex: 1 1;
+  padding: 0 2%;
 }
 
+/* About Me section */
 .aboutMe {
   align-items: stretch;
 }
 
-.contactMe ul {
-  /* remove decorations */
-  list-style-type: none;
+/* My Work section */
+.myWork ul {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; /* so any straggler is centered on the screen (even # of <li>s*/
+}
 
+.myWork li {
+  flex: 1 1 50%;
+  max-width: 45%;
+}
+
+.myWork li:first-child {
+  max-width: 100%;
+}
+.myWork img {
+  /* scale the image and make it display on its own*/
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+/* Contact Me section */
+.contactMe ul {
   /*set formatting of items in list */
   justify-content: space-around;
 }
