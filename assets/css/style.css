@@ -11,8 +11,8 @@ body {
   /* height: 100vh; */
   width: 100%;
   margin: 0;
-  padding: 60px 0; /* padding will allow a fixed header and footer */
-  background-color: cornflowerblue;
+  padding-top: 60px; /* padding will allow a fixed header */
+  background-color: rgb(160, 193, 255);
 
   /* make a flex container */
   display: flex;
@@ -24,8 +24,7 @@ body {
 }
 
 /* set common style for header footer */
-header,
-footer {
+header {
   background-color: blue;
   height: 60px;
   width: 100%;
@@ -33,18 +32,25 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-header {
   /* fix to the top of the page */
   position: fixed;
   top: 0;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
+/* Anything with this class will be a flex container - other classes will set the specifics of how the container works */
+.container {
+  display: flex;
 }
+
+.aboutMe {
+  align-items: stretch;
+}
+
+.contactMe p {
+  display: inline;
+}
+
 /************************* Tablet view port settings  *************************/
 @media screen and (max-width: 992px) {
   header {
