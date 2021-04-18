@@ -19,20 +19,20 @@ body {
   width: 100%; /* use entire screen */
   margin: 0; /* no margins */
   padding-top: 6%; /* padding will allow a fixed header */
-  
+
   /* set default colors */
-  background-color: #ededf6; 
+  background-color: #ededf6;
   color: #445876;
 
   /* set default fonts */
-  font-family: 'Noto Sans', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Noto Sans", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   line-height: 1.5em;
 }
 
 /* set common style for header footer */
 header {
-  background-color: #31343d;  
+  background-color: #31343d;
   /* height: 10%; */
   width: 100%;
   padding: 1% 0;
@@ -86,8 +86,8 @@ nav a {
   margin: 0 0.5em;
 
   /* set up underline */
-  padding: 0.5em ;
-  border-bottom: 0.25em solid ;
+  padding: 0.5em;
+  border-bottom: 0.25em solid;
 
   /* setup color scheme */
   background-color: #31343d;
@@ -101,18 +101,29 @@ nav a {
 
 /* heading and content set up spacing of the content in each area of the container */
 .hero {
-  flex 0 1 100%;
+  flex: 0 1 100%;
   height: 10em;
   /* width: 100%; */
   position: relative;
 
-background-image: url(../images/darkSky.jpg);
-background-repeat: no-repeat;
-background-size: cover;
+  /* set background image */
+  background-image: url(../images/darkSky.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero p {
-  background-color: ;
+  /* postion the quote */
+  position: absolute;
+  bottom: 1.5em;
+  right: 3em;
+
+  /* make the box look good */
+  background-color: #92cccd;
+
+  /* make quote look good */
+  font-size: 1.5em;
+  text-align: right;
 }
 
 .heading {
@@ -200,7 +211,11 @@ div {
 /*********************** Large phone view port settings ***********************/
 @media screen and (max-width: 768px) {
   header {
-    background-color: green;
+    background-color: blue;
+  }
+
+  .hero {
+    display: none;
   }
 }
 
@@ -210,4 +225,3 @@ div {
     background-color: lightgreen;
   }
 }
-
