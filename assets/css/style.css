@@ -3,7 +3,7 @@
   box-sizing: border-box;
 
   /* for test purposes */
-  /* border: 1px dotted black; */
+  border: 1px dotted red;
 }
 
 body {
@@ -17,8 +17,8 @@ body {
   margin: 0; /* no margins */
 
   /* set default colors */
-  background-color: #030542;
   color: #445876;
+  background-color: #030542;
 
   /* set default fonts */
   font-family: "Noto Sans", Verdana, Geneva, Tahoma, sans-serif;
@@ -28,7 +28,7 @@ body {
 
 /* set common style for header footer */
 header {
-  background-color: #31343d;
+  /* background-color: #31343d; */
   width: 100%;
   padding: 1% 0;
 
@@ -52,8 +52,8 @@ header {
   padding: 0.125% 1% 0.125% 3%;
 
   /* setup color scheme */
-  color: #31343d;
-  background-color: #92cccd;
+  color: #ededf6;
+  background-color: #670667;
 }
 
 /* size the image */
@@ -81,11 +81,11 @@ nav a {
 
   /* set up underline */
   padding: 0.5em;
-  border-bottom: 0.25em solid;
+  border-bottom: 0.25em solid #ededf6;
 
   /* setup color scheme */
-  background-color: #31343d;
-  color: #92cccd;
+  color: #ededf6;
+  /* background-color: #31343d; */
 
   /* colors the button on hover... not quite right as it doesn't "flow" it just fades in. 
   transition: background-color 0.5s ease-in-out;
@@ -93,18 +93,18 @@ nav a {
   
   from: https://dev.to/flyingduck92/creating-fill-background-animation-for-button-using-css-2me3 I was able to figure out how to get the fill I wanted. */
 
-  background: linear-gradient(to top, #92cccd 50%, #31343d 50%);
+  background: linear-gradient(to top, #ededf6 50%, #670667 50%);
   background-size: 100% 200%;
   background-position: top left;
   transition: all 0.5s ease-out;
 }
 
 nav a:hover {
-  color: #31343d;
+  /* color: #31343d; */
   background-position: bottom left;
   /* font-weight: bold; */
 
-  border-color: #92cccd;
+  /* border-color: #ededf6; */
 }
 
 /* Anything with this class will be a flex container - other classes will set the specifics of how the container works */
@@ -114,9 +114,9 @@ nav a:hover {
 
 /* heading and content set up spacing of the content in each area of the container */
 .heading {
-  /* won't grow, but will shrink - basis is 10% but there is a min/max on sizing so it won't grow too much or lose the line boundaries*/
-  flex: 0 1 10%;
-  max-width: 10%;
+  /* won't grow, but will shrink - basis is 100% so it will start out using 15% of the space (from the min/max). */
+  flex: 0 1 100%;
+  max-width: 15%;
   min-width: 5%;
   text-align: right;
   padding: 0.5%;
@@ -157,8 +157,9 @@ nav a:hover {
   right: 3em;
 
   /* make the box look good */
-  background-color: #92cccd;
-  padding: 0.5%;
+  color: #ededf6;
+  /* background-color: #92cccd; */
+  /* padding: 0.5%; */
 
   /* make quote look good */
   font-size: 1.5em;
@@ -187,9 +188,17 @@ nav a:hover {
 }
 
 /* Contact Me section */
+.contactMe .content {
+  justify-content: space-around;
+  align-items: center;
+}
+
 .contactMe ul {
   /*set formatting of items in list */
   justify-content: space-around;
+  align-items: center;
+
+  flex: 1 1 auto;
 }
 
 /************************* Tablet view port settings  *************************/
