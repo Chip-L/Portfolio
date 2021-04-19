@@ -1,3 +1,7 @@
+/* variables: */
+:root {
+  --bgColor: #030542;
+}
 /* universal selector - set box style */
 * {
   box-sizing: border-box;
@@ -18,7 +22,7 @@ body {
 
   /* set default colors */
   color: #445876;
-  background-color: #030542;
+  background-color: var(--bgColor);
 
   /* set default fonts */
   font-family: "Noto Sans", Verdana, Geneva, Tahoma, sans-serif;
@@ -40,7 +44,8 @@ header {
   /* fix to the top of the page (sticky does this without realtive positioning!) */
   position: sticky;
   top: 0;
-  z-index: 1; /* force it to be on top */
+  z-index: 10; /* force it to be on top */
+  background-color: var(--bgColor);
 }
 
 .logo {
@@ -136,13 +141,9 @@ nav a:hover {
 }
 
 .content {
-  flex: 1 1 0;
+  flex: 1 1 auto;
   padding: 0 2%;
 }
-
-/* section[class="content"]::before {
-  border-left: 0.5em solid red;
-} */
 
 /* Hero section */
 .hero {
@@ -185,17 +186,38 @@ nav a:hover {
   border-radius: 0.25em;
 }
 
-/* About Me section */
+/****************************** About Me Section ******************************/
+
 .aboutMe {
   align-items: stretch;
 }
 
-/* My Work section */
+/****************************** My Work Section  ******************************/
 .myWork {
   align-items: stretch;
 }
 
-/* Contact Me section */
+.myWork .content {
+  flex-wrap: wrap;
+}
+
+.myWork a {
+  /* inline item won't display as section */
+  display: block;
+
+  /* display 2 columns of items */
+  flex: 1 0 50%;
+
+  /* so I can overlay the text on the image */
+  position: relative;
+}
+
+/* change behavior of the first child */
+.myWork a:first-child {
+  flex: 1 0 100%;
+}
+
+/***************************** Contact Me Section *****************************/
 .contactMe .content {
   justify-content: space-around;
   align-items: center;
