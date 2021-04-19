@@ -3,7 +3,7 @@
   box-sizing: border-box;
 
   /* for test purposes */
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
 }
 
 body {
@@ -212,26 +212,92 @@ nav a:hover {
 }
 
 /************************* Tablet view port settings  *************************/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
   header {
-    background-color: darkgreen; /* for test */
+    background-color: #670667; /* for test */
     flex-direction: column;
-    justify-content: stretch;
+    align-items: stretch;
+  }
+  .logo {
+    flex: 1 0 100%;
+    padding: 0.125%;
+    margin: 0;
+    align-self: center;
+  }
+  nav {
+    flex: 1 0 auto;
+    padding: 1%;
   }
 
-  nav {
-    padding-top: 1%;
+  nav a {
+    text-align: center;
+  }
+}
+
+/* where the contact me lines break - this is to force the content on different lines */
+@media screen and (max-width: 860px) {
+  .contactMe ul {
+    padding-bottom: 0.5em;
+  }
+
+  .contactMe label {
+    display: block;
+    text-align: center;
   }
 }
 
 /*********************** Large phone view port settings ***********************/
 @media screen and (max-width: 768px) {
   header {
-    background-color: blue;
+    background-image: url(../images/darkSky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .logo {
+    background-color: transparent;
+  }
+
+  nav a {
+    background: none;
+  }
+
+  nav a:hover {
+    color: #ededf6;
   }
 
   .hero {
     display: none;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .heading {
+    flex: 1 0 auto;
+    min-width: 90%;
+    max-width: none;
+
+    text-align: center;
+    align-self: center;
+
+    /* switch the border from the side to the bottom */
+    border-bottom: 0.25em solid;
+    border-right: none;
+
+    position: sticky; /* not working */
+  }
+
+  .aboutMe,
+  .myWork,
+  .contactMe {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .contactMe label {
+    display: inline;
   }
 }
 
