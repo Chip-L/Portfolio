@@ -302,8 +302,9 @@ nav a:hover {
 }
 
 /*********************** Small phone view port settings ***********************/
-@media screen and (max-width: 576px) {
+/* I decided this wasn't actually needed */
+/* @media screen and (max-width: 576px) {
   header {
     background-color: lightgreen;
   }
-}
+} */
