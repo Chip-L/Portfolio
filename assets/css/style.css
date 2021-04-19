@@ -3,7 +3,7 @@
   box-sizing: border-box;
 
   /* for test purposes */
-  border: 1px dotted black;
+  /* border: 1px dotted black; */
 }
 
 body {
@@ -29,7 +29,6 @@ body {
 /* set common style for header footer */
 header {
   background-color: #31343d;
-  /* height: 10%; */
   width: 100%;
   padding: 1% 0;
 
@@ -50,9 +49,7 @@ header {
   align-items: center;
 
   /* give the container size and space around it */
-  /* min-width: 15%; */
-  padding: 0 1% 0 3%;
-  line-height: 0;
+  padding: 0.125% 1% 0.125% 3%;
 
   /* setup color scheme */
   color: #31343d;
@@ -74,6 +71,7 @@ nav {
   justify-content: space-between;
 
   font-size: 1.5em;
+  padding-right: 3%;
 }
 
 nav a {
@@ -88,6 +86,25 @@ nav a {
   /* setup color scheme */
   background-color: #31343d;
   color: #92cccd;
+
+  /* colors the button on hover... not quite right as it doesn't "flow" it just fades in. 
+  transition: background-color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+  
+  from: https://dev.to/flyingduck92/creating-fill-background-animation-for-button-using-css-2me3 I was able to figure out how to get the fill I wanted. */
+
+  background: linear-gradient(to top, #92cccd 50%, #31343d 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  transition: all 0.5s ease-out;
+}
+
+nav a:hover {
+  color: #31343d;
+  background-position: bottom left;
+  /* font-weight: bold; */
+
+  border-color: #92cccd;
 }
 
 /* Anything with this class will be a flex container - other classes will set the specifics of how the container works */

@@ -60,3 +60,7 @@ Study Group:
 - Lauren Gabaldon
 - Josh Lee
 - Jared Sutch
+
+Other sources:
+
+- Sekti. (2020, July 27). Fill background animation using css. Retrieved April 18, 2021, from https://dev.to/flyingduck92/creating-fill-background-animation-for-button-using-css-2me3
