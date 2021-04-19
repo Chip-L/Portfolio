@@ -100,7 +100,7 @@ nav a {
 }
 
 nav a:hover {
-  /* color: #31343d; */
+  color: #670667;
   background-position: bottom left;
   /* font-weight: bold; */
 
@@ -199,6 +199,16 @@ nav a:hover {
   align-items: center;
 
   flex: 1 1 auto;
+}
+
+.contactMe li {
+  border-bottom: 0.25em solid #670667;
+  padding: 0.25em;
+}
+
+.contactMe a {
+  font-weight: bold;
+  color: #670667;
 }
 
 /************************* Tablet view port settings  *************************/
