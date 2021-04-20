@@ -1,5 +1,8 @@
 /* variables: */
 :root {
+  --primary: #ededf6;
+  --secondary: #445876;
+  --highlight: #670667;
   --bgColor: #030542;
 }
 /* universal selector - set box style */
@@ -7,7 +10,11 @@
   box-sizing: border-box;
 
   /* for test purposes */
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -21,18 +28,20 @@ body {
   margin: 0; /* no margins */
 
   /* set default colors */
-  color: #445876;
+  color: var(--secondary);
   background-color: var(--bgColor);
 
   /* set default fonts */
   font-family: "Noto Sans", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
-  line-height: 1.5em;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 /* set common style for header footer */
 header {
-  /* background-color: #31343d; */
+  background-color: var(
+    --bgColor
+  ); /* be sure to keep the background color when scrolling */
   width: 100%;
   padding: 1% 0;
 
@@ -45,9 +54,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 10; /* force it to be on top */
-  background-color: var(
-    --bgColor
-  ); /* be sure to keep the background color when scrolling */
 }
 
 .logo {
@@ -59,40 +65,39 @@ header {
   padding: 0.125% 1% 0.125% 3%;
 
   /* setup color scheme */
-  color: #ededf6;
-  background-color: #670667;
+  color: var(--primary);
+  background-color: var(--highlight);
 }
 
 /* size the image */
 .logo img {
-  height: 4em;
-  margin-right: 1em;
+  height: 6.4rem;
+  margin-right: 2em;
 }
 
 .logo h1 {
-  font-size: 3em;
+  font-size: 4.8rem;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
 
-  font-size: 1.5em;
+  font-size: 2.4rem;
   padding-right: 3%;
 }
 
 nav a {
   /* format display */
   flex: 1 1 auto;
-  margin: 0 0.5em;
+  margin: 0 0.5rem;
 
   /* set up underline */
-  padding: 0.5em;
-  border-bottom: 0.25em solid #ededf6;
+  padding: 0.5rem;
+  border-bottom: 0.4rem solid var(--primary);
 
   /* setup color scheme */
-  color: #ededf6;
-  /* background-color: #31343d; */
+  color: var(--primary);
 
   /* colors the button on hover... not quite right as it doesn't "flow" it just fades in. 
   transition: background-color 0.5s ease-in-out;
@@ -100,18 +105,15 @@ nav a {
   
   from: https://dev.to/flyingduck92/creating-fill-background-animation-for-button-using-css-2me3 I was able to figure out how to get the fill I wanted. */
 
-  background: linear-gradient(to top, #ededf6 50%, #670667 50%);
+  background: linear-gradient(to top, var(--primary) 50%, var(--highlight) 50%);
   background-size: 100% 200%;
   background-position: top left;
   transition: all 0.5s ease-out;
 }
 
 nav a:hover {
-  color: #670667;
+  color: var(--highlight);
   background-position: bottom left;
-  /* font-weight: bold; */
-
-  /* border-color: #ededf6; */
 }
 
 /* Anything with this class will be a flex container - other classes will set the specifics of how the container works */
@@ -136,9 +138,9 @@ nav a:hover {
 }
 
 .bar {
-  border: 0.25em solid;
+  border: 0.4rem solid;
   /* height: 500px; */
-  width: 0.25em;
+  width: 0.4rem;
 }
 
 .content {
@@ -149,7 +151,7 @@ nav a:hover {
 /* Hero section */
 .hero {
   flex: 0 1 auto;
-  height: 10em;
+  height: 16rem;
 
   /* so the text can be positioned properly; */
   position: relative;
@@ -163,14 +165,14 @@ nav a:hover {
 .hero p {
   /* postion the quote */
   position: absolute;
-  bottom: 1.5em;
-  right: 3em;
+  bottom: 2.5rem;
+  right: 3rem;
 
   /* make the box look good */
-  color: #ededf6;
+  color: var(--primary);
 
   /* make quote look good */
-  font-size: 1.5em;
+  font-size: 2.4rem;
   text-align: right;
 }
 
@@ -180,9 +182,11 @@ nav a:hover {
 .contactMe {
   margin: 1%;
   padding: 0.25% 0;
-  background-color: #ededf6;
-  color: #445876;
-  border-radius: 0.25em;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-radius: 0.4rem;
+  /* to stop from scrolling above the sticky header */
+  scroll-margin-top: 10rem;
 }
 
 /****************************** About Me Section ******************************/
@@ -241,32 +245,32 @@ nav a:hover {
 }
 
 .contactMe li {
-  border-bottom: 0.25em solid #670667;
-  padding: 0.25em;
+  border-bottom: 0.4rem solid var(--highlight);
+  padding: 0.4rem;
 }
 
 .contactMe a {
   font-weight: bold;
-  color: #670667;
+  color: var(--highlight);
 }
 
 /* change the name size */
 @media screen and (max-width: 1425px) {
   .logo h1 {
-    font-size: 2em;
+    font-size: 3.2rem;
   }
 }
 
 @media screen and (max-width: 1198px) {
   .logo h1 {
-    font-size: 1.5em;
+    font-size: 2.4rem;
   }
 }
 
 /************************* Tablet view port settings  *************************/
 @media screen and (max-width: 1000px) {
   header {
-    background-color: #670667; /* for test */
+    background-color: var(--highlight); /* for test */
     flex-direction: column;
     align-items: stretch;
   }
@@ -279,7 +283,7 @@ nav a:hover {
   }
 
   .logo h1 {
-    font-size: 3em;
+    font-size: 4.8rem;
   }
 
   nav {
@@ -295,11 +299,11 @@ nav a:hover {
 /* where the contact me lines break - this is to force the content on different lines */
 @media screen and (max-width: 860px) {
   .logo h1 {
-    font-size: 2.5em;
+    font-size: 4rem;
   }
 
   .contactMe ul {
-    padding-bottom: 0.5em;
+    padding-bottom: 0.5rem;
   }
 
   .contactMe label {
@@ -325,7 +329,7 @@ nav a:hover {
   }
 
   nav a:hover {
-    color: #ededf6;
+    color: var(--primary);
   }
 
   .hero {
@@ -345,7 +349,7 @@ nav a:hover {
     align-self: center;
 
     /* switch the border from the side to the bottom */
-    border-bottom: 0.25em solid;
+    border-bottom: 0.4rem solid;
     border-right: none;
 
     position: sticky; /* not working */
@@ -365,7 +369,7 @@ nav a:hover {
 
 @media screen and (max-width: 637px) {
   .logo h1 {
-    font-size: 2em;
+    font-size: 3.2rem;
   }
 }
 
