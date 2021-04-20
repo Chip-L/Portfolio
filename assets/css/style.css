@@ -213,14 +213,18 @@ nav a:hover {
   flex: 1 0 100%;
 }
 
-.myWork a img {
+.myWork img {
   width: 100%;
   object-fit: cover;
   object-position: top;
-  height: 50%;
+  height: 30rem;
 
   filter: blur(1px) opacity(0.4);
   transition: all 0.1s ease-in-out;
+}
+
+.myWork a:first-child img {
+  height: 60rem;
 }
 
 .myWork a img:hover {
