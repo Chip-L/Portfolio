@@ -7,7 +7,7 @@
   box-sizing: border-box;
 
   /* for test purposes */
-  /* border: 1px dotted red; */
+  border: 1px dotted red;
 }
 
 body {
@@ -45,7 +45,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 10; /* force it to be on top */
-  background-color: var(--bgColor);
+  background-color: var(
+    --bgColor
+  ); /* be sure to keep the background color when scrolling */
 }
 
 .logo {
@@ -69,14 +71,6 @@ header {
 
 .logo h1 {
   font-size: 3em;
-}
-
-.fullname {
-  display: inline;
-}
-
-.nickname {
-  display: none;
 }
 
 nav {
@@ -128,16 +122,23 @@ nav a:hover {
 /* heading and content set up spacing of the content in each area of the container */
 .heading {
   /* won't grow, but will shrink - basis is 100% so it will start out using 15% of the space (from the min/max). */
-  flex: 0 1 100%;
+  flex: 1 1 100%;
   max-width: 15%;
   min-width: 5%;
   text-align: right;
   padding: 0.5%;
 
-  border-right: 0.25em solid;
+  /* border-right: 0.25em solid; */
 
   /* align at the top of the section */
-  align-self: flex-start;
+  /* align-self: flex-start; */
+  justify-content: space-between;
+}
+
+.bar {
+  border: 0.25em solid;
+  /* height: 500px; */
+  width: 0.25em;
 }
 
 .content {
@@ -167,8 +168,6 @@ nav a:hover {
 
   /* make the box look good */
   color: #ededf6;
-  /* background-color: #92cccd; */
-  /* padding: 0.5%; */
 
   /* make quote look good */
   font-size: 1.5em;
@@ -194,7 +193,8 @@ nav a:hover {
 
 /****************************** My Work Section  ******************************/
 .myWork {
-  align-items: stretch;
+  /* justify-content: stretch;
+  align-items: stretch; */
 }
 
 .myWork .content {
@@ -217,6 +217,15 @@ nav a:hover {
   flex: 1 0 100%;
 }
 
+.myWork a img {
+  width: 100%;
+  object-fit: cover;
+  height: 50%;
+}
+
+.img-text {
+  position: absolute;
+}
 /***************************** Contact Me Section *****************************/
 .contactMe .content {
   justify-content: space-around;
