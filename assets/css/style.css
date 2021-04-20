@@ -228,8 +228,28 @@ nav a:hover {
 }
 
 .img-text {
+  /* position the box */
   position: absolute;
+  top: 5rem;
+  left: 0;
+
+  /* make the box look good */
+  color: var(--primary);
+  background-color: var(--highlight);
+  padding: 1rem;
+  padding-left: 5rem;
 }
+
+.project-name {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.technologies {
+  font-style: italic;
+}
+
 /***************************** Contact Me Section *****************************/
 .contactMe .content {
   justify-content: space-around;
