@@ -1,0 +1,92 @@
+/* Mobile first approach to CSS */
+/* variables: */
+:root {
+  --primary: #ededf6;
+  --secondary: #445876;
+  --highlight: #670667;
+  --bgColor: #030542;
+  --heroImg: url(../images/darkSky.jpg);
+}
+
+/* universal selector - set box style */
+* {
+  box-sizing: border-box;
+
+  /* for test purposes */
+  /* border: 1px dotted red; */
+}
+
+/* set default font to ~10px per rem */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* make a flex container */
+  display: flex;
+  /* show items vertically -- these are the main containers */
+  flex-direction: column;
+
+  /* set up the screen */
+  width: 100%; /* use entire screen */
+  margin: 0; /* no margins */
+
+  /* set default colors */
+  color: var(--secondary);
+  background-color: var(--bgColor);
+
+  /* set default fonts */
+  font-family: "Noto Sans", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+/* set common style for header footer */
+header {
+  /* be sure to keep the background color when scrolling */
+  color: var(--primary);
+  background-color: var(--highlight);
+  background-image: var(--heroImg);
+  background-size: cover;
+  width: 100%;
+  padding: 0.5rem 0;
+
+  /* set up how items fit in the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  /* fix to the top of the page (sticky does this without realtive positioning!) */
+  position: sticky;
+  top: 0;
+  z-index: 10; /* force it to be on top */
+}
+
+.logo h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* size the headshot image */
+.logo img {
+  display: none;
+}
+
+.myWork {
+  display: none;
+}
+
+/* media query stuff:
+
+.logo {
+  /* center the items vertically in the container */
+/*  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+*/
