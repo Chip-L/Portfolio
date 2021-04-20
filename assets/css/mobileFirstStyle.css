@@ -94,6 +94,10 @@ nav .bar {
   align-self: stretch;
 }
 
+.hero {
+  display: none;
+}
+
 .myWork {
   display: none;
 }
