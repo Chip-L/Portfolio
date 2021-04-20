@@ -41,7 +41,7 @@ body {
   line-height: 2.4rem;
 }
 
-/* set common style for header footer */
+/*********************************** Header ***********************************/
 header {
   /* be sure to keep the background color when scrolling */
   color: var(--primary);
@@ -94,12 +94,52 @@ nav .bar {
   align-self: stretch;
 }
 
+/************************************ Main ************************************/
 .hero {
   display: none;
 }
 
-.myWork {
+.aboutMe,
+.myWork,
+.contactMe {
+  background-color: var(--primary);
+  margin: 0.5rem;
+  padding: 0.5rem;
+
+  scroll-margin-top: 10rem;
+  flex-direction: column;
+}
+
+.myWork img {
   display: none;
+}
+.contactMe ul {
+  flex-direction: column;
+}
+
+/* Anything with this class will be a flex container - other classes will set the specifics of how the container works */
+.container {
+  display: flex;
+}
+
+/* heading and content set up spacing of the content in each area of the container */
+.heading {
+  /* won't grow, but will shrink - basis is 100% so it will start out using 15% of the space (from the min/max). */
+  flex: 1 1 100%;
+  max-width: 15%;
+  min-width: 5%;
+  text-align: right;
+  padding: 0.5%;
+
+  /* Apply the separation between the h2 and .bar */
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* draw the line between h2 and content */
+.bar {
+  border-right: 0.4rem solid;
+  margin-left: 2rem;
 }
 
 /* media query stuff:

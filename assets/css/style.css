@@ -374,8 +374,6 @@ nav a:hover {
     /* switch the border from the side to the bottom */
     border-bottom: 0.4rem solid;
     border-right: none;
-
-    position: sticky; /* not working */
   }
 
   .aboutMe,
