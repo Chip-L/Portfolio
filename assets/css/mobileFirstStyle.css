@@ -125,10 +125,11 @@ nav .bar {
 /* heading and content set up spacing of the content in each area of the container */
 .heading {
   /* won't grow, but will shrink - basis is 100% so it will start out using 15% of the space (from the min/max). */
-  flex: 1 1 100%;
-  max-width: 15%;
-  min-width: 5%;
-  text-align: right;
+  flex: 1 0 auto;
+  max-width: none;
+  min-width: 90%;
+  text-align: center;
+  align-self: center;
   padding: 0.5%;
 
   /* Apply the separation between the h2 and .bar */
@@ -138,8 +139,8 @@ nav .bar {
 
 /* draw the line between h2 and content */
 .bar {
-  border-right: 0.4rem solid;
-  margin-left: 2rem;
+  border-bottom: 0.4rem solid;
+  margin: 0.5rem 0;
 }
 
 /* media query stuff:
