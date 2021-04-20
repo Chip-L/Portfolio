@@ -1,4 +1,4 @@
-/* Mobile first approach to CSS */
+/* Mobile first approach to CSS  starting w/ screen width of 320px */
 /* variables: */
 :root {
   --primary: #ededf6;
@@ -45,7 +45,7 @@ body {
 header {
   /* be sure to keep the background color when scrolling */
   color: var(--primary);
-  background-color: var(--highlight);
+  background-color: var(--highlight); /* used if no image */
   background-image: var(--heroImg);
   background-size: cover;
   width: 100%;
@@ -58,6 +58,7 @@ header {
   align-items: center;
 
   /* fix to the top of the page (sticky does this without realtive positioning!) */
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10; /* force it to be on top */
@@ -71,6 +72,26 @@ header {
 /* size the headshot image */
 .logo img {
   display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0 0.5rem;
+}
+
+nav a {
+  padding: 0.25rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+nav .bar {
+  border-right: 0.2rem solid;
+  margin: 0.5rem;
+  align-self: stretch;
 }
 
 .myWork {
