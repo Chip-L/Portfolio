@@ -130,17 +130,14 @@ nav a:hover {
   text-align: right;
   padding: 0.5%;
 
-  /* border-right: 0.25em solid; */
-
-  /* align at the top of the section */
-  /* align-self: flex-start; */
-  justify-content: space-between;
+  /* Apply the separation between the h2 and .bar */
+  justify-content: flex-end;
 }
 
+/* draw the line between h2 and content */
 .bar {
-  border: 0.4rem solid;
-  /* height: 500px; */
-  width: 0.4rem;
+  border-right: 0.4rem solid;
+  margin-left: 2rem;
 }
 
 .content {
@@ -214,6 +211,9 @@ nav a:hover {
 
   /* so I can overlay the text on the image */
   position: relative;
+
+  /* formmating */
+  padding: 1rem;
 }
 
 /* change behavior of the first child */
@@ -225,6 +225,13 @@ nav a:hover {
   width: 100%;
   object-fit: cover;
   height: 50%;
+
+  filter: blur(1px) opacity(0.4);
+  transition: all 0.1s ease-in-out;
+}
+
+.myWork a img:hover {
+  filter: none;
 }
 
 .img-text {
