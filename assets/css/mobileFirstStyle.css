@@ -110,6 +110,11 @@ nav .bar {
   flex-direction: column;
 }
 
+.aboutMe p {
+  text-indent: 3rem;
+  text-align: justify;
+}
+
 .myWork img {
   display: none;
 }
