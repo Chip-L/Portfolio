@@ -60,6 +60,7 @@ Study Group:
 - Lauren Gabaldon
 - Josh Lee
 - Jared Sutch
+- Lacey Pape
 
 Other sources:
 
