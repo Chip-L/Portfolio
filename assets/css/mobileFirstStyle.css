@@ -123,10 +123,8 @@ nav .bar {
 }
 
 .myWork a {
-  /* display: block; */
   position: relative;
   padding: 1rem;
-  /* flex: 1 0 100%; */
 }
 
 .myWork img {
@@ -338,6 +336,7 @@ nav .bar {
     text-align: right;
   }
 
+  /******************************* Main sections  *******************************/
   .aboutMe,
   .myWork,
   .contactMe {
@@ -347,6 +346,34 @@ nav .bar {
     flex-direction: row;
   }
 
+  .myWork .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .myWork a {
+    flex: 1 0 50%;
+  }
+
+  /* change behavior of the first child */
+  .myWork a:first-child {
+    flex: 1 0 100%;
+  }
+
+  .myWork img {
+    filter: blur(1px) opacity(0.4);
+    transition: all 0.1s ease-in-out;
+  }
+
+  .myWork a:first-child img {
+    height: 60rem;
+  }
+
+  .myWork a img:hover {
+    filter: none;
+  }
+
+  /**************************** Main section's areas ****************************/
   .heading {
     flex: 1 1 100%;
     max-width: 15rem;
