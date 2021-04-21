@@ -114,6 +114,7 @@ nav .bar {
 .aboutMe p {
   text-indent: 3rem;
   text-align: justify;
+  padding: 0.25rem;
 }
 
 /**** My Work ****/
@@ -191,7 +192,7 @@ nav .bar {
   align-self: center;
   min-width: 90%;
   text-align: center;
-  padding: 0.5%;
+  padding: 0.5rem;
 
   /* Apply the separation between the h2 and .bar */
   flex-direction: column;
@@ -335,5 +336,34 @@ nav .bar {
     /* make quote look good */
     font-size: 2.4rem;
     text-align: right;
+  }
+
+  .aboutMe,
+  .myWork,
+  .contactMe {
+    margin: 1rem;
+    border-radius: 0.4rem;
+    scroll-margin-top: 10rem;
+    flex-direction: row;
+  }
+
+  .heading {
+    flex: 1 1 100%;
+    max-width: 15rem;
+    min-width: 5rem;
+    text-align: right;
+
+    align-self: auto;
+    flex-direction: row;
+  }
+
+  .bar {
+    /* turn off what was  */
+    border-bottom: none;
+    margin: 0;
+
+    /* turn on the now */
+    border-right: 0.4rem solid;
+    margin-left: 2rem;
   }
 }
