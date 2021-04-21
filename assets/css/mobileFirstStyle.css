@@ -221,24 +221,36 @@ nav .bar {
 /**************************** Tablets (426-765px)  ****************************/
 
 @media screen and (min-width: 425px) {
-  header {
-    /* flex-direction: row; */
-  }
-
   .logo {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .logo img {
     display: inline;
     height: 6.4rem;
-    margin-right: 2em;
+    margin-right: 1rem;
   }
 
   .logo h1 {
-    font-size: 2.4rem;
-    line-height: 6.4rem;
+    font-size: 3rem;
+  }
+
+  nav {
+    align-items: flex-end;
+  }
+
+  nav a {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 0.4rem solid var(--primary);
+    font-size: 2rem;
+    line-height: inherit;
+  }
+
+  nav .bar {
+    display: none;
   }
 
   .aboutMe,
