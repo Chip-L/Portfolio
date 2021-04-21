@@ -205,10 +205,19 @@ nav .bar {
   margin: 0.5rem 0;
 }
 
-/********************** Medium Mobile Phones (320-375px) **********************/
+/********************** Large Mobile Phones (375-425px)  **********************/
 
+@media only screen and (min-width: 375px) {
+  .logo h1 {
+    font-size: 2.75rem;
+  }
+}
+
+/**************************** Tablets (320-425px)  ****************************/
+
+/* 
 @media screen and (min-width: 375) {
   .logo h1 {
     font-size: 2.5;
   }
-}
+} */
