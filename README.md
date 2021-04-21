@@ -54,7 +54,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 Completed site: [https://chip-l.github.io/Portfolio/]
 
 ```
-![Working Page](./assets/images/screenshot.png)
+![Working Page](./assets/images/PortfolioCompleted.jpg)
 ```
 
 ## Credits
