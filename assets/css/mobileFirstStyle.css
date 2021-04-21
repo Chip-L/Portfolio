@@ -48,20 +48,24 @@ header {
   background-color: var(--highlight); /* used if no image */
   background-image: var(--heroImg);
   background-size: cover;
-  width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
 
   /* set up how items fit in the container */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 
   /* fix to the top of the page (sticky does this without realtive positioning!) */
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10; /* force it to be on top */
+}
+
+.logo {
+  padding: 0.5rem;
+}
+/* size the headshot image */
+.logo img {
+  display: none;
 }
 
 .logo h1 {
@@ -69,17 +73,12 @@ header {
   font-size: 2rem;
 }
 
-/* size the headshot image */
-.logo img {
-  display: none;
-}
-
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
 
-  padding: 0 0.5rem;
+  padding: 0.5rem;
 }
 
 nav a {
@@ -209,15 +208,42 @@ nav .bar {
 
 @media only screen and (min-width: 375px) {
   .logo h1 {
-    font-size: 2.75rem;
+    font-size: 2.2rem;
+  }
+
+  .aboutMe,
+  .myWork,
+  .contactMe {
+    scroll-margin-top: 8rem;
   }
 }
 
-/**************************** Tablets (320-425px)  ****************************/
+/**************************** Tablets (426-765px)  ****************************/
 
-/* 
-@media screen and (min-width: 375) {
-  .logo h1 {
-    font-size: 2.5;
+@media screen and (min-width: 425px) {
+  header {
+    /* flex-direction: row; */
   }
-} */
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo img {
+    display: inline;
+    height: 6.4rem;
+    margin-right: 2em;
+  }
+
+  .logo h1 {
+    font-size: 2.4rem;
+    line-height: 6.4rem;
+  }
+
+  .aboutMe,
+  .myWork,
+  .contactMe {
+    scroll-margin-top: 12rem;
+  }
+}
