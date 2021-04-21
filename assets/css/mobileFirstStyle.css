@@ -220,7 +220,7 @@ nav .bar {
 
 /**************************** Tablets (426-765px)  ****************************/
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 426px) {
   .logo {
     display: flex;
     justify-content: center;
@@ -256,6 +256,59 @@ nav .bar {
   .aboutMe,
   .myWork,
   .contactMe {
-    scroll-margin-top: 12rem;
+    scroll-margin-top: 13.6rem;
+  }
+}
+
+/*************************** Desktops (769-1440px)  ***************************/
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: none;
+    background-color: var(--bgColor);
+    padding: 1rem 0;
+  }
+
+  .logo {
+    padding-left: 3rem;
+    color: var(--primary);
+    background-color: var(--highlight);
+  }
+
+  .logo img {
+    margin-right: 2rem;
+  }
+
+  .logo h1 {
+    font-size: 3rem;
+  }
+
+  nav {
+    padding-right: 3rem;
+  }
+
+  nav a {
+    font-size: 2.4rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+
+    /* color transitions from: https://dev.to/flyingduck92/creating-fill-background-animation-for-button-using-css-2me3 I was able to figure out how to get the fill I wanted. */
+    background: linear-gradient(
+      to top,
+      var(--primary) 50%,
+      var(--highlight) 50%
+    );
+    background-size: 100% 200%;
+    background-position: top left;
+    transition: all 0.5s ease-out;
+  }
+
+  nav a:hover {
+    color: var(--highlight);
+    background-position: bottom left;
   }
 }
