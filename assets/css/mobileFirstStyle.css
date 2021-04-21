@@ -94,7 +94,8 @@ nav .bar {
   align-self: stretch;
 }
 
-/************************************ Main ************************************/
+/******************************* Main sections  *******************************/
+
 .hero {
   display: none;
 }
@@ -118,9 +119,27 @@ nav .bar {
 .myWork img {
   display: none;
 }
+
+.contactMe .content {
+  justify-content: space-around;
+}
+
 .contactMe ul {
   flex-direction: column;
+  align-items: center;
 }
+
+.contactMe li {
+  border-bottom: 0.3rem solid var(--highlight);
+  padding: 0.4rem;
+}
+
+.contactMe a {
+  font-weight: bold;
+  color: var(--highlight);
+}
+
+/**************************** Main section's areas ****************************/
 
 /* Anything with this class will be a flex container - other classes will set the specifics of how the container works */
 .container {
@@ -129,12 +148,9 @@ nav .bar {
 
 /* heading and content set up spacing of the content in each area of the container */
 .heading {
-  /* won't grow, but will shrink - basis is 100% so it will start out using 15% of the space (from the min/max). */
-  flex: 1 0 auto;
-  max-width: none;
+  align-self: center;
   min-width: 90%;
   text-align: center;
-  align-self: center;
   padding: 0.5%;
 
   /* Apply the separation between the h2 and .bar */
