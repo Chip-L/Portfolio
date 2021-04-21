@@ -4,6 +4,10 @@
 
 A Portfolio will showcase my talents. This will highlight my skills and show my understanding of HTML and CSS. This page, initially, will not be made with JavaScript and will be pure HTML and CSS. This is focusing on using flexbox technology.
 
+There was a lot to learn on this one. Flexboxes do not seem intuitive to me. I think I need to do a lot more work with them before I can really grasp what they want. I did have fun finding some transitions and using the pseudo elements.
+
+I did the first build of this as _desktop first_. I went back and re-did the formatting as _mobile first_. It seemed to be much easier to do that way, where the elements change from small to large and you just add special features at the end. (You can note the differences between the "style.css" (Desktop first) and "mobileFirstStyle.css" files.)
+
 ## Table of Contents
 
 - [User Story](#user-story)
