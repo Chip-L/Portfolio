@@ -292,10 +292,6 @@ nav .bar {
   }
 
   nav a {
-    font-size: 2.4rem;
-    margin: 0 0.5rem;
-    padding: 0.5rem;
-
     /* color transitions from: https://dev.to/flyingduck92/creating-fill-background-animation-for-button-using-css-2me3 I was able to figure out how to get the fill I wanted. */
     background: linear-gradient(
       to top,
@@ -310,5 +306,34 @@ nav .bar {
   nav a:hover {
     color: var(--highlight);
     background-position: bottom left;
+  }
+
+  .hero {
+    display: block;
+    height: 16rem;
+
+    /* so the text can be positioned properly; */
+    position: relative;
+
+    /* set background image */
+    background-image: url(../images/darkSky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero p {
+    /* postion the quote */
+    position: absolute;
+    bottom: 2.5rem;
+    right: 3rem;
+
+    /* make the box look good */
+    color: var(--primary);
+    /* I opted to not use the background color - looked better without 
+  background-color: var(var(--highlight)); */
+
+    /* make quote look good */
+    font-size: 2.4rem;
+    text-align: right;
   }
 }
