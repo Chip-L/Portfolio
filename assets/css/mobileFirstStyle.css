@@ -205,16 +205,10 @@ nav .bar {
   margin: 0.5rem 0;
 }
 
-/* media query stuff:
+/********************** Medium Mobile Phones (320-375px) **********************/
 
-.logo {
-  /* center the items vertically in the container */
-/*  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (min-width: 375) {
+  .logo h1 {
+    font-size: 2.5;
+  }
 }
-
-
-
-
-*/
