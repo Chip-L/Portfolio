@@ -111,17 +111,58 @@ nav .bar {
   flex-direction: column;
 }
 
+/**** About Me ****/
 .aboutMe p {
   text-indent: 3rem;
   text-align: justify;
 }
 
-.myWork img {
-  display: none;
+/**** My Work ****/
+.myWork .content {
+  flex-direction: column;
 }
 
+.myWork a {
+  /* display: block; */
+  position: relative;
+  padding: 1rem;
+  /* flex: 1 0 100%; */
+}
+
+.myWork img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+.img-text {
+  /* position the box */
+  position: absolute;
+  top: 5rem;
+  left: 0;
+
+  /* make the box look good */
+  color: var(--primary);
+  background-color: var(--highlight);
+  padding: 1rem;
+  padding-left: 5rem;
+}
+
+.project-name {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.technologies {
+  font-style: italic;
+}
+
+/**** Contact Me ****/
 .contactMe .content {
   justify-content: space-around;
+  flex-direction: column;
 }
 
 .contactMe ul {
