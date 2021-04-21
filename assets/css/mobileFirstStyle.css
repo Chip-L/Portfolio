@@ -259,6 +259,13 @@ nav .bar {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 860px) {
+  .contactMe label {
+    display: block;
+    text-align: center;
+  }
+}
+
 /*************************** Desktops (769-1440px)  ***************************/
 
 @media screen and (min-width: 768px) {
@@ -371,6 +378,17 @@ nav .bar {
 
   .myWork a img:hover {
     filter: none;
+  }
+
+  .contactMe .content {
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .contactMe ul {
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
   }
 
   /**************************** Main section's areas ****************************/
