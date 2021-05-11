@@ -54,7 +54,7 @@ header {
   display: flex;
   flex-direction: column;
 
-  /* fix to the top of the page (sticky does this without realtive positioning!) */
+  /* fix to the top of the page (sticky does this without relative positioning!) */
   position: sticky;
   top: 0;
   z-index: 10; /* force it to be on top */
@@ -63,7 +63,7 @@ header {
 .logo {
   padding: 0.5rem;
 }
-/* size the headshot image */
+/* size the head shot image */
 .logo img {
   display: none;
 }
@@ -328,7 +328,7 @@ nav .bar {
   }
 
   .hero p {
-    /* postion the quote */
+    /* position the quote */
     position: absolute;
     bottom: 2.5rem;
     right: 3rem;
