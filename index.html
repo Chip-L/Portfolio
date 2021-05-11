@@ -51,6 +51,7 @@
     </header>
 
     <main>
+      <!-- Hero section - only displays on tablet and above -->
       <section class="hero">
         <p>
           "<strong>Hard work beats talent if talent doesn’t work hard.</strong
@@ -59,6 +60,7 @@
         </p>
       </section>
 
+      <!-- About Me section -->
       <!-- Format this section's content as it is expected to display. There is no further css expected. -->
       <section id="aboutMe" class="container aboutMe">
         <section class="heading container">
@@ -89,6 +91,7 @@
         </section>
       </section>
 
+      <!-- Project section -->
       <!-- Don't forget to specify the project name and types -->
       <section id="myWork" class="container myWork">
         <section class="heading container">
@@ -104,6 +107,11 @@
             <img
               src="./assets/images/jsCodeQuiz/OpeningScreenScreenshot.jpg"
               alt="Javascript Code Quiz webpage image"
+              data-repeat="true"
+              ;
+              data-show-1="./assets/images/jsCodeQuiz/JSQuizScreenshot.jpg"
+              data-show-3="./assets/images/jsCodeQuiz/JSQuizScreenshot.jpg"
+              data-show-4="./assets/images/jsCodeQuiz/JSQuizScreenshot.jpg"
             />
             <div class="img-text">
               <span class="project-name">Javascript Code Quiz</span><br />
@@ -167,7 +175,7 @@
         </section>
       </section>
 
-      <!-- This is completed -->
+      <!-- This is Contact Me section -->
       <section id="contactMe" class="container contactMe">
         <section class="heading container">
           <h2>Contact Me</h2>
@@ -208,14 +216,16 @@
       </section>
     </main>
     <!-- No footer included at this time -->
+
     <!-- -  -  -  -  -  -  -  -  -  Scripts   -  -  -  -  -  -  -  -  - -->
     <!-- jQuery -->
-    <!-- <script
+    <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
 
-    <script src="./assets/js/script.js"></script> -->
+    <!-- My script -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
