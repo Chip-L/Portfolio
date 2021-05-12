@@ -36,4 +36,19 @@ function setupRotatingPics() {
   });
 }
 
+function setupGifs() {
+  const gifImgs = document.querySelectorAll('[data-gif="true"]'); // select all images that have gifs
+
+  gifImgs.forEach((element) => {
+    element.addEventListener("mouseenter", function () {
+      element.src = element.dataset.active;
+    });
+
+    element.addEventListener("mouseout", function () {
+      element.src = element.dataset.still;
+    });
+  });
+}
+
 setupRotatingPics();
+setupGifs();
