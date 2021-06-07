@@ -6,7 +6,7 @@ A Portfolio will showcase my talents. This will highlight my skills and show my 
 
 This was pretty straight forward. I had already done most of the work already last time so this was just updating the framework.
 
-(see old [README.md](/README-v1.md))
+(see old [README.md](/assets/misc/README-v1.md))
 
 ## Table of Contents
 
@@ -37,7 +37,7 @@ SO THAT I can review samples of their work and assess whether they're a good can
 
 Completed site: [https://chip-l.github.io/Portfolio/]
 
-![Working Page](./assets/misc/PortfolioCompleted-2.jpg)
+![Working Page](PortfolioCompleted-2.jpg)
 
 ## Credits
 
