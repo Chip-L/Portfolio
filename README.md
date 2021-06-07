@@ -4,7 +4,7 @@
 
 A Portfolio will showcase my talents. This will highlight my skills and show my understanding of HTML and CSS. This page, initially, will not be made with JavaScript and will be pure HTML and CSS. This is focusing on using flexbox technology.
 
-(see old [README.md](/README-v2.md))
+(see old [README.md](/assets/misc/README-v2.md))
 
 ## Table of Contents
 
