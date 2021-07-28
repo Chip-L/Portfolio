@@ -8,6 +8,15 @@
   --heroImg: url(../images/darkSky.jpg);
 }
 
+/* set up font awesome icons */
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* universal selector - set box style */
 * {
   box-sizing: border-box;
@@ -122,12 +131,12 @@ nav .bar {
   flex-direction: column;
 }
 
-.myWork a {
+.project {
   position: relative;
   padding: 1rem;
 }
 
-.myWork img {
+.project img {
   width: 100%;
   height: 30rem;
   object-fit: cover;
@@ -156,6 +165,15 @@ nav .bar {
 
 .technologies {
   font-style: italic;
+}
+
+.project a {
+  text-decoration: underline;
+}
+
+.github,
+.web {
+  padding: 0.5rem 0;
 }
 
 /**** Contact Me ****/
@@ -216,6 +234,23 @@ nav .bar {
   .myWork,
   .contactMe {
     scroll-margin-top: 8rem;
+  }
+
+  .github,
+  .web {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .github::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f09b";
+  }
+
+  .web::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f57d";
   }
 }
 
@@ -360,16 +395,16 @@ nav .bar {
     flex-wrap: wrap;
   }
 
-  .myWork a {
+  .project {
     flex: 0 0 50%;
   }
 
-  .myWork img {
+  .project img {
     filter: blur(1px) opacity(0.4);
     transition: all 0.1s ease-in-out;
   }
 
-  .myWork a img:hover {
+  .project img:hover {
     filter: none;
   }
 
