@@ -20,9 +20,6 @@
 /* universal selector - set box style */
 * {
   box-sizing: border-box;
-
-  /* for test purposes */
-  /* border: 1px dotted red; */
 }
 
 /* set default font to ~10px per rem */
@@ -108,9 +105,7 @@ nav .bar {
   display: none;
 }
 
-.aboutMe,
-.myWork,
-.contactMe {
+.primary {
   background-color: var(--primary);
   margin: 0.5rem;
   padding: 0.5rem;
@@ -119,11 +114,24 @@ nav .bar {
   flex-direction: column;
 }
 
+.content {
+  flex: 2;
+}
+
 /**** About Me ****/
 .aboutMe p {
   text-indent: 3rem;
   text-align: justify;
   padding: 0.25rem;
+}
+
+.mySkills .container {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.mySkills img {
+  padding: 0.25rem;
+  height: 48px;
 }
 
 /**** My Work ****/
@@ -230,9 +238,7 @@ nav .bar {
     font-size: 2.2rem;
   }
 
-  .aboutMe,
-  .myWork,
-  .contactMe {
+  .primary {
     scroll-margin-top: 8rem;
   }
 
@@ -289,9 +295,7 @@ nav .bar {
     display: none;
   }
 
-  .aboutMe,
-  .myWork,
-  .contactMe {
+  .primary {
     scroll-margin-top: 13.6rem;
   }
 }
@@ -381,9 +385,7 @@ nav .bar {
   }
 
   /******************************* Main sections  *******************************/
-  .aboutMe,
-  .myWork,
-  .contactMe {
+  .primary {
     margin: 1rem;
     border-radius: 0.4rem;
     scroll-margin-top: 10rem;
