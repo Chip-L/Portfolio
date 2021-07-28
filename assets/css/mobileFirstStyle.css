@@ -145,6 +145,7 @@ nav .bar {
   background-color: var(--highlight);
   padding: 1rem;
   padding-left: 5rem;
+  max-width: 75%;
 }
 
 .project-name {
@@ -183,6 +184,7 @@ nav .bar {
 /* Anything with this class will be a flex container - other classes will set the specifics of how the container works */
 .container {
   display: flex;
+  justify-content: center;
 }
 
 /* heading and content set up spacing of the content in each area of the container */
@@ -359,21 +361,12 @@ nav .bar {
   }
 
   .myWork a {
-    flex: 1 0 50%;
-  }
-
-  /* change behavior of the first child */
-  .myWork a:first-child {
-    flex: 1 0 100%;
+    flex: 0 0 50%;
   }
 
   .myWork img {
     filter: blur(1px) opacity(0.4);
     transition: all 0.1s ease-in-out;
-  }
-
-  .myWork a:first-child img {
-    height: 60rem;
   }
 
   .myWork a img:hover {
