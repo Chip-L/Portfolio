@@ -118,6 +118,16 @@ nav .bar {
   flex: 2;
 }
 
+.aboutMe .info-text {
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.info-text a {
+  text-decoration: underline;
+  color: blue;
+}
+
 /**** About Me ****/
 .aboutMe p {
   text-indent: 3rem;
