@@ -14,6 +14,11 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
     <!-- favicon (generated at: https://www.favicon-generator.org/ )-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
@@ -62,7 +67,7 @@
 
       <!-- About Me section -->
       <!-- Format this section's content as it is expected to display. There is no further css expected. -->
-      <section id="aboutMe" class="container aboutMe">
+      <section id="aboutMe" class="primary container aboutMe">
         <section class="heading container">
           <h2>About Me</h2>
           <div class="bar"></div>
@@ -91,20 +96,80 @@
         </section>
       </section>
 
+      <section id="mySkills" class="primary container aboutMe mySkills">
+        <section class="heading container">
+          <h2>My Skills</h2>
+          <div class="bar"></div>
+        </section>
+        <section class="content">
+          <p>
+            Here are is a list of some of the libraries and frameworks I've
+            learned and focus on:
+          </p>
+          <p class="container">
+            <img
+              src="https://img.icons8.com/color/48/000000/html-5--v1.png"
+              alt="HTML"
+              title="HTML"
+            />
+            <img
+              src="https://img.icons8.com/color/64/000000/css3.png"
+              alt="CSS3"
+              title="CSS3"
+            />
+            <img
+              src="https://img.icons8.com/color/48/000000/javascript--v1.png"
+              alt="JavaScript"
+              title="JavaScript"
+            />
+            <img
+              src="https://img.icons8.com/color/48/000000/react-native.png"
+              alt="React JS"
+              title="React JS"
+            />
+            <img
+              src="https://img.icons8.com/color/48/000000/nodejs.png"
+              alt="NodeJS"
+              title="NodeJS"
+            />
+            <img
+              src="https://img.icons8.com/color/48/000000/apollo.png"
+              alt="Apollo Server"
+              title="Apollo Server"
+            />
+            <img
+              src="https://img.icons8.com/color/48/000000/graphql.png"
+              alt="GraphQL"
+              title="GraphQL"
+            />
+            <img
+              src="https://img.icons8.com/color/48/000000/mysql-logo.png"
+              alt="MySQL"
+              title="MySQL"
+            />
+            <img
+              src="https://img.icons8.com/color/48/000000/mongodb.png"
+              alt="MongoDB"
+              title="MongoDB"
+            />
+          </p>
+          <p class="info-text">
+            <span title="Icons are from https://icons8.com/">
+              Icons are from
+              <a href="https://icons8.com/">https://icons8.com/</a></span
+            >
+          </p>
+        </section>
+      </section>
       <!-- Project section -->
       <!-- Don't forget to specify the project name and types -->
-      <section id="myWork" class="container myWork">
+      <section id="myWork" class="primary container myWork">
         <section class="heading container">
           <h2>My Work</h2>
           <div class="bar"></div>
         </section>
         <section class="content container">
-          <!-- title: shop-a-lot -->
-          <a
-            href="https://shop-a-lot.herokuapp.com/"
-            target="_blank"
-            rel="noopener"
-          >
+          <div title="Shop-A-Lot" class="project">
             <!-- images  -->
             <img
               src="./assets/images/shopalot/homepage(logged_out).jpg"
@@ -121,19 +186,34 @@
             />
             <!-- project details -->
             <div class="img-text">
-              <span class="project-name">Shop-A-Lot</span><br />
-              <span class="technologies"
-                >CSS, Javascript, NodeJS, Express, Sequelize, Handlebars,
-                bCrypt, NodeMail, Group Project</span
-              >
+              <p class="project-name">Shop-A-Lot</p>
+              <p class="technologies">
+                CSS, Javascript, NodeJS, Express, Sequelize, Handlebars, bCrypt,
+                NodeMail, Group Project
+              </p>
+              <div class="github">
+                <a
+                  title="https://github.com/Chip-L/shop-a-lot"
+                  href="https://github.com/Chip-L/shop-a-lot"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  See the repository!
+                </a>
+              </div>
+              <div class="web">
+                <a
+                  title="https://shop-a-lot.herokuapp.com/"
+                  href="https://shop-a-lot.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  See it live!
+                </a>
+              </div>
             </div>
-          </a>
-          <!-- title: code quiz -->
-          <a
-            href="https://chip-l.github.io/jsCodeQuiz/"
-            target="_blank"
-            rel="noopener"
-          >
+          </div>
+          <div title="code quiz" class="project">
             <!-- images  -->
             <img
               src="./assets/images/jsCodeQuiz/OpeningScreenScreenshot.jpg"
@@ -146,16 +226,31 @@
             />
             <!-- project details -->
             <div class="img-text">
-              <span class="project-name">Javascript Code Quiz</span><br />
-              <span class="technologies">CSS, Javascript</span>
+              <p class="project-name">Javascript Code Quiz</p>
+              <p class="technologies">CSS, Javascript</p>
+              <div class="github">
+                <a
+                  title="https://github.com/Chip-L/jsCodeQuiz"
+                  href="https://github.com/Chip-L/jsCodeQuiz"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  See the repository!
+                </a>
+              </div>
+              <div class="web">
+                <a
+                  title="https://chip-l.github.io/jsCodeQuiz/"
+                  href="https://chip-l.github.io/jsCodeQuiz/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  See it live!
+                </a>
+              </div>
             </div>
-          </a>
-          <!-- title: joke trivia -->
-          <a
-            href="https://chip-l.github.io/jokeTrivia/"
-            target="_blank"
-            rel="noopener"
-          >
+          </div>
+          <div title="Joke Trivia" class="project">
             <!-- images  -->
             <img
               src="./assets/images/JokeTrivia/joke-trivia-still.jpg"
@@ -166,45 +261,95 @@
             />
             <!-- project details -->
             <div class="img-text">
-              <span class="project-name">Joke Trivia</span><br />
-              <span class="technologies"
-                >jQuery, Bootstrap, API, Group Project</span
-              >
+              <p class="project-name">Joke Trivia</p>
+              <p class="technologies">jQuery, Bootstrap, API, Group Project</p>
+              <div class="github">
+                <a
+                  title="https://github.com/Chip-L/jokeTrivia/"
+                  href="https://github.com/Chip-L/jokeTrivia/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  See the repository!
+                </a>
+              </div>
+              <div class="web">
+                <a
+                  title="https://chip-l.github.io/jokeTrivia/"
+                  href="https://chip-l.github.io/jokeTrivia/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  See it live!
+                </a>
+              </div>
             </div>
-          </a>
-          <!-- title: weather dashboard -->
-          <a
-            href="https://chip-l.github.io/weatherDashboard/"
-            target="_blank"
-            rel="noopener"
-            ><img
+          </div>
+          <div title="Weather Dashboard" class="project">
+            <img
               src="./assets/images/weatherDashboard.jpg"
               alt="Weather Dashboard webpage image"
             />
             <div class="img-text">
-              <span class="project-name">Weather Dashboard</span><br />
-              <span class="technologies">jQuery, Bootstrap, API</span>
+              <p class="project-name">Weather Dashboard</p>
+              <p class="technologies">jQuery, Bootstrap, API</p>
+              <div class="github">
+                <a
+                  title="https://github.com/Chip-L/weatherDashboard/"
+                  href="https://github.com/Chip-L/weatherDashboard/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  See the repository!
+                </a>
+              </div>
+              <div class="web">
+                <a
+                  title="https://chip-l.github.io/weatherDashboard/"
+                  href="https://chip-l.github.io/weatherDashboard/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  See it live!
+                </a>
+              </div>
             </div>
-          </a>
-          <!-- title: match game -->
-          <a
-            href="https://chip-l.github.io/Match_Game/"
-            target="_blank"
-            rel="noopener"
-            ><img
+          </div>
+          <div title="match game" class="project">
+            <img
               src="./assets/images/MatchGame.jpg"
               alt="Match Game webpage image"
             />
             <div class="img-text">
-              <span class="project-name">Match Game</span><br />
-              <span class="technologies">Javascript</span>
+              <p class="project-name">Match Game</p>
+              <p class="technologies">Javascript</p>
+              <div class="github">
+                <a
+                  title="https://github.com/Chip-L/Match_Game"
+                  href="https://github.com/Chip-L/Match_Game"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  See the repository!
+                </a>
+              </div>
+              <div class="web">
+                <a
+                  title="https://chip-l.github.io/Match_Game/"
+                  href="https://chip-l.github.io/Match_Game/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  See it live!
+                </a>
+              </div>
             </div>
-          </a>
+          </div>
         </section>
       </section>
 
       <!-- This is Contact Me section -->
-      <section id="contactMe" class="container contactMe">
+      <section id="contactMe" class="primary container contactMe">
         <section class="heading container">
           <h2>Contact Me</h2>
           <div class="bar"></div>

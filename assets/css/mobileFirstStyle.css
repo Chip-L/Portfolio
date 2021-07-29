@@ -8,12 +8,18 @@
   --heroImg: url(../images/darkSky.jpg);
 }
 
+/* set up font awesome icons */
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* universal selector - set box style */
 * {
   box-sizing: border-box;
-
-  /* for test purposes */
-  /* border: 1px dotted red; */
 }
 
 /* set default font to ~10px per rem */
@@ -99,15 +105,27 @@ nav .bar {
   display: none;
 }
 
-.aboutMe,
-.myWork,
-.contactMe {
+.primary {
   background-color: var(--primary);
   margin: 0.5rem;
   padding: 0.5rem;
 
   scroll-margin-top: 10rem;
   flex-direction: column;
+}
+
+.content {
+  flex: 2;
+}
+
+.aboutMe .info-text {
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.info-text a {
+  text-decoration: underline;
+  color: blue;
 }
 
 /**** About Me ****/
@@ -117,17 +135,26 @@ nav .bar {
   padding: 0.25rem;
 }
 
+.mySkills .container {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.mySkills img {
+  padding: 0.25rem;
+  height: 48px;
+}
+
 /**** My Work ****/
 .myWork .content {
   flex-direction: column;
 }
 
-.myWork a {
+.project {
   position: relative;
   padding: 1rem;
 }
 
-.myWork img {
+.project img {
   width: 100%;
   height: 30rem;
   object-fit: cover;
@@ -145,6 +172,7 @@ nav .bar {
   background-color: var(--highlight);
   padding: 1rem;
   padding-left: 5rem;
+  max-width: 75%;
 }
 
 .project-name {
@@ -155,6 +183,15 @@ nav .bar {
 
 .technologies {
   font-style: italic;
+}
+
+.project a {
+  text-decoration: underline;
+}
+
+.github,
+.web {
+  padding: 0.5rem 0;
 }
 
 /**** Contact Me ****/
@@ -183,6 +220,7 @@ nav .bar {
 /* Anything with this class will be a flex container - other classes will set the specifics of how the container works */
 .container {
   display: flex;
+  justify-content: center;
 }
 
 /* heading and content set up spacing of the content in each area of the container */
@@ -210,10 +248,25 @@ nav .bar {
     font-size: 2.2rem;
   }
 
-  .aboutMe,
-  .myWork,
-  .contactMe {
+  .primary {
     scroll-margin-top: 8rem;
+  }
+
+  .github,
+  .web {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .github::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f09b";
+  }
+
+  .web::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f57d";
   }
 }
 
@@ -252,9 +305,7 @@ nav .bar {
     display: none;
   }
 
-  .aboutMe,
-  .myWork,
-  .contactMe {
+  .primary {
     scroll-margin-top: 13.6rem;
   }
 }
@@ -344,9 +395,7 @@ nav .bar {
   }
 
   /******************************* Main sections  *******************************/
-  .aboutMe,
-  .myWork,
-  .contactMe {
+  .primary {
     margin: 1rem;
     border-radius: 0.4rem;
     scroll-margin-top: 10rem;
@@ -358,25 +407,16 @@ nav .bar {
     flex-wrap: wrap;
   }
 
-  .myWork a {
-    flex: 1 0 50%;
+  .project {
+    flex: 0 0 50%;
   }
 
-  /* change behavior of the first child */
-  .myWork a:first-child {
-    flex: 1 0 100%;
-  }
-
-  .myWork img {
+  .project img {
     filter: blur(1px) opacity(0.4);
     transition: all 0.1s ease-in-out;
   }
 
-  .myWork a:first-child img {
-    height: 60rem;
-  }
-
-  .myWork a img:hover {
+  .project img:hover {
     filter: none;
   }
 
