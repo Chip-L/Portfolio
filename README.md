@@ -33,10 +33,17 @@ SO THAT I can review samples of their work and assess whether they're a good can
 
 Completed site: [https://chip-l.github.io/Portfolio/]
 
-![Working Page](./assets/misc/PortfolioCompleted-3.jpg)
+### Desktop
+
+![Working Page](./assets/misc/PortfolioCompleted-4.jpg)
+
+### Mobile
+
+![Working Page](./assets/misc/PortfolioCompleted-4.m.jpg)
 
 ## Credits
 
 Other sources:
 
 - Sekti. (2020, July 27). Fill background animation using css. Retrieved April 18, 2021, from https://dev.to/flyingduck92/creating-fill-background-animation-for-button-using-css-2me3
+- slide down css https://gist.github.com/Chip-L/4e9002590deea97fe5295694d0d6a8ca
