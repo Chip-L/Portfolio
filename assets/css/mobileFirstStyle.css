@@ -434,6 +434,55 @@ figcaption .links {
     filter: none;
   }
 
+  /* This adds the animation to slide the caption text up and down. However, I only want this to happen if the feature is supported (it is on most browsers -- https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-fill-color) */
+  @supports (-webkit-text-fill-color: transparent) {
+    figcaption {
+      /* hide the figcaption above it's actual location */
+      transform: translateY(-100%);
+      transform-origin: top;
+
+      /* change the color of the background while sliding
+          the 50% makes this 2 solid colors and not actually blend*/
+      background: linear-gradient(
+        to top,
+        var(--highlight) 50%,
+        transparent 50%
+      );
+      background-size: 100% 200%;
+      background-position: top;
+
+      /* describe the transition */
+      transition: all 0.5s ease-in-out;
+    }
+
+    figure:hover figcaption {
+      /* move the figcaption to its proper place */
+      transform: translateY(0%);
+
+      /* show the background */
+      background-position: bottom;
+    }
+
+    figcaption .captionText {
+      /* text gradient is defined by the background but is clipped to the text and the text is transparent */
+      background: linear-gradient(to top, var(--primary) 50%, transparent 50%);
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-size: 100% 200%;
+      background-position: top;
+      background-clip: text;
+      -webkit-background-clip: text;
+
+      /* describe the transition */
+      transition: all 0.5s ease-in-out;
+    }
+
+    figure:hover figcaption .captionText {
+      /* show the background */
+      background-position: bottom;
+    }
+  }
+
   .contactMe .content {
     flex-direction: row;
     flex: 1;
