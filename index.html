@@ -30,369 +30,372 @@
     <link rel="stylesheet" href="./assets/css/mobileFirstStyle.css" />
   </head>
 
-  <body>
-    <header>
-      <section class="logo">
-        <img
-          id="headshot"
-          src="./assets/images/headshot_small.JPG"
-          alt="head shot"
-        />
-        <h1>Lawrence A Long III (Chip)</h1>
-      </section>
-      <nav>
-        <a href="#aboutMe">About Me</a>
-        <div class="bar"></div>
-        <a href="#myWork">My Work</a>
-        <div class="bar"></div>
-        <a href="#contactMe">Contact Me</a>
-        <div class="bar"></div>
-        <a
-          href="./assets/images/Resume - Lawrence Long III (2021).pdf"
-          target="_blank"
-          >Resume</a
-        >
-      </nav>
-    </header>
-
-    <main>
-      <!-- Hero section - only displays on tablet and above -->
-      <section class="hero">
-        <p>
-          "<strong>Hard work beats talent if talent doesn’t work hard.</strong
-          >"<br />
-          - Tim Notke
-        </p>
-      </section>
-
-      <!-- About Me section -->
-      <!-- Format this section's content as it is expected to display. There is no further css expected. -->
-      <section id="aboutMe" class="primary container aboutMe">
-        <section class="heading container">
-          <h2>About Me</h2>
+  <body class="container">
+    <div class="page">
+      <header>
+        <section class="logo">
+          <img
+            id="headshot"
+            src="./assets/images/headshot_small.JPG"
+            alt="head shot"
+          />
+          <h1>Lawrence A Long III (Chip)</h1>
+        </section>
+        <nav>
+          <a href="#aboutMe">About Me</a>
           <div class="bar"></div>
-        </section>
-        <section class="content">
-          <p>
-            Hello! My name is Chip Long. I have worked as a manual software
-            quality assurance engineer for the past 12 years. I started that
-            career working at a third party testing house so I was able to test
-            a very wide variety of software. Everything from games, to websites,
-            to security programs. I have also worked briefly in the insurance
-            world, but mostly the last several years have been working in
-            FinTech on mobile banking solutions.
-          </p>
-          <p>
-            I currently feel I have reached about as far as I can go in the
-            manual test world. I have good skills at creating test plans and
-            writing test cases. Although I have helped set up automation testing
-            for a couple of the products I have worked on, I have very little
-            actual automation experience. I have fixed this problem by enrolling
-            in the DU coding boot camp. This taught me full stack development
-            (MERN).
-          </p>
-          <p>
-            I started working for FJA-USA. The company creates software for
-            insurance companies. I've primarily worked in NodeJS creating
-            modules for document generation software.
-          </p>
-        </section>
-      </section>
+          <a href="#myWork">My Work</a>
+          <div class="bar"></div>
+          <a href="#contactMe">Contact Me</a>
+          <div class="bar"></div>
+          <a
+            href="./assets/images/Resume - Lawrence Long III (2021).pdf"
+            target="_blank"
+            >Resume</a
+          >
+        </nav>
+      </header>
 
-      <section id="mySkills" class="primary container aboutMe mySkills">
-        <section class="heading container">
-          <h2>My Skills</h2>
-          <div class="bar"></div>
-        </section>
-        <section class="content">
+      <main>
+        <!-- Hero section - only displays on tablet and above -->
+        <section class="hero">
           <p>
-            Here are is a list of some of the libraries and frameworks I've
-            learned and focus on:
-          </p>
-          <p class="container">
-            <img
-              src="https://img.icons8.com/color/48/000000/html-5--v1.png"
-              alt="HTML"
-              title="HTML"
-            />
-            <img
-              src="https://img.icons8.com/color/64/000000/css3.png"
-              alt="CSS3"
-              title="CSS3"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/javascript--v1.png"
-              alt="JavaScript"
-              title="JavaScript"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/react-native.png"
-              alt="React JS"
-              title="React JS"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/nodejs.png"
-              alt="NodeJS"
-              title="NodeJS"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/apollo.png"
-              alt="Apollo Server"
-              title="Apollo Server"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/graphql.png"
-              alt="GraphQL"
-              title="GraphQL"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/mysql-logo.png"
-              alt="MySQL"
-              title="MySQL"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/mongodb.png"
-              alt="MongoDB"
-              title="MongoDB"
-            />
-          </p>
-          <p class="info-text">
-            <span title="Icons are from https://icons8.com/">
-              Icons are from
-              <a href="https://icons8.com/">https://icons8.com/</a></span
-            >
+            "<strong>Hard work beats talent if talent doesn’t work hard.</strong
+            >"<br />
+            - Tim Notke
           </p>
         </section>
-      </section>
-      <!-- Project section -->
-      <!-- Don't forget to specify the project name and types -->
-      <section id="myWork" class="primary container myWork">
-        <section class="heading container">
-          <h2>My Work</h2>
-          <div class="bar"></div>
-        </section>
-        <section class="content container">
-          <div title="Shop-A-Lot" class="project">
-            <!-- images  -->
-            <img
-              src="./assets/images/shopalot/homepage(logged_out).jpg"
-              alt="Shop-A-Lot e-commerce site"
-              data-repeat="true"
-              data-show-0="./assets/images/shopalot/homepage(logged_out).jpg"
-              data-show-1="./assets/images/shopalot/signup.jpg"
-              data-show-2="./assets/images/shopalot/login.jpg"
-              data-show-3="./assets/images/shopalot/homepage(logged_in).jpg"
-              data-show-4="./assets/images/shopalot/category.jpg"
-              data-show-5="./assets/images/shopalot/product.jpg"
-              data-show-6="./assets/images/shopalot/cart.jpg"
-              data-show-7="./assets/images/shopalot/backpack.jpg"
-            />
-            <!-- project details -->
-            <div class="img-text">
-              <p class="project-name">Shop-A-Lot</p>
-              <p class="technologies">
-                CSS, Javascript, NodeJS, Express, Sequelize, Handlebars, bCrypt,
-                NodeMail, Group Project
-              </p>
-              <div class="github">
-                <a
-                  title="https://github.com/Chip-L/shop-a-lot"
-                  href="https://github.com/Chip-L/shop-a-lot"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  See the repository!
-                </a>
-              </div>
-              <div class="web">
-                <a
-                  title="https://shop-a-lot.herokuapp.com/"
-                  href="https://shop-a-lot.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  See it live!
-                </a>
-              </div>
-            </div>
-          </div>
-          <div title="code quiz" class="project">
-            <!-- images  -->
-            <img
-              src="./assets/images/jsCodeQuiz/OpeningScreenScreenshot.jpg"
-              alt="Javascript Code Quiz webpage image"
-              data-repeat="true"
-              data-show-0="./assets/images/jsCodeQuiz/OpeningScreenScreenshot.jpg"
-              data-show-1="./assets/images/jsCodeQuiz/JSQuizScreenshot.jpg"
-              data-show-2="./assets/images/jsCodeQuiz/GameOverScreenshot.jpg"
-              data-show-3="./assets/images/jsCodeQuiz/HighScoresScreenshot.jpg"
-            />
-            <!-- project details -->
-            <div class="img-text">
-              <p class="project-name">Javascript Code Quiz</p>
-              <p class="technologies">CSS, Javascript</p>
-              <div class="github">
-                <a
-                  title="https://github.com/Chip-L/jsCodeQuiz"
-                  href="https://github.com/Chip-L/jsCodeQuiz"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  See the repository!
-                </a>
-              </div>
-              <div class="web">
-                <a
-                  title="https://chip-l.github.io/jsCodeQuiz/"
-                  href="https://chip-l.github.io/jsCodeQuiz/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  See it live!
-                </a>
-              </div>
-            </div>
-          </div>
-          <div title="Joke Trivia" class="project">
-            <!-- images  -->
-            <img
-              src="./assets/images/JokeTrivia/joke-trivia-still.jpg"
-              data-gif="true"
-              data-still="./assets/images/JokeTrivia/joke-trivia-still.jpg"
-              data-active="./assets/images/JokeTrivia/joke-trivia-demo.gif"
-              alt="Joke Trivia webpage image"
-            />
-            <!-- project details -->
-            <div class="img-text">
-              <p class="project-name">Joke Trivia</p>
-              <p class="technologies">jQuery, Bootstrap, API, Group Project</p>
-              <div class="github">
-                <a
-                  title="https://github.com/Chip-L/jokeTrivia/"
-                  href="https://github.com/Chip-L/jokeTrivia/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  See the repository!
-                </a>
-              </div>
-              <div class="web">
-                <a
-                  title="https://chip-l.github.io/jokeTrivia/"
-                  href="https://chip-l.github.io/jokeTrivia/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  See it live!
-                </a>
-              </div>
-            </div>
-          </div>
-          <div title="Weather Dashboard" class="project">
-            <img
-              src="./assets/images/weatherDashboard.jpg"
-              alt="Weather Dashboard webpage image"
-            />
-            <div class="img-text">
-              <p class="project-name">Weather Dashboard</p>
-              <p class="technologies">jQuery, Bootstrap, API</p>
-              <div class="github">
-                <a
-                  title="https://github.com/Chip-L/weatherDashboard/"
-                  href="https://github.com/Chip-L/weatherDashboard/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  See the repository!
-                </a>
-              </div>
-              <div class="web">
-                <a
-                  title="https://chip-l.github.io/weatherDashboard/"
-                  href="https://chip-l.github.io/weatherDashboard/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  See it live!
-                </a>
-              </div>
-            </div>
-          </div>
-          <div title="match game" class="project">
-            <img
-              src="./assets/images/MatchGame.jpg"
-              alt="Match Game webpage image"
-            />
-            <div class="img-text">
-              <p class="project-name">Match Game</p>
-              <p class="technologies">Javascript</p>
-              <div class="github">
-                <a
-                  title="https://github.com/Chip-L/Match_Game"
-                  href="https://github.com/Chip-L/Match_Game"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  See the repository!
-                </a>
-              </div>
-              <div class="web">
-                <a
-                  title="https://chip-l.github.io/Match_Game/"
-                  href="https://chip-l.github.io/Match_Game/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  See it live!
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
 
-      <!-- This is Contact Me section -->
-      <section id="contactMe" class="primary container contactMe">
-        <section class="heading container">
-          <h2>Contact Me</h2>
-          <div class="bar"></div>
+        <!-- About Me section -->
+        <!-- Format this section's content as it is expected to display. There is no further css expected. -->
+        <section id="aboutMe" class="primary container aboutMe">
+          <section class="heading container">
+            <h2>About Me</h2>
+            <div class="bar"></div>
+          </section>
+          <section class="content">
+            <p>
+              Hello! My name is Chip Long. I have worked as a manual software
+              quality assurance engineer for the past 12 years. I started that
+              career working at a third party testing house so I was able to
+              test a very wide variety of software. Everything from games, to
+              websites, to security programs. I have also worked briefly in the
+              insurance world, but mostly the last several years have been
+              working in FinTech on mobile banking solutions.
+            </p>
+            <p>
+              I currently feel I have reached about as far as I can go in the
+              manual test world. I have good skills at creating test plans and
+              writing test cases. Although I have helped set up automation
+              testing for a couple of the products I have worked on, I have very
+              little actual automation experience. I have fixed this problem by
+              enrolling in the DU coding boot camp. This taught me full stack
+              development (MERN).
+            </p>
+            <p>
+              I started working for FJA-USA. The company creates software for
+              insurance companies. I've primarily worked in NodeJS creating
+              modules for document generation software.
+            </p>
+          </section>
         </section>
-        <section class="content container">
-          <ul class="container">
-            <li>
-              <label for="phone">Phone:</label>
-              <a id="phone" href="tel:7202894751">720-289-4751</a>
-            </li>
-            <li>
-              <label for="email">Email:</label>
-              <a id="email" href="#">chip_long@yahoo.com</a>
-            </li>
-            <li>
-              <label for="github"> Github:</label>
-              <a
-                id="github"
-                href="https://github.com/Chip-L/"
-                target="_blank"
-                rel="noopener"
-                >Chip-L</a
+
+        <section id="mySkills" class="primary container mySkills">
+          <section class="heading container">
+            <h2>My Skills</h2>
+            <div class="bar"></div>
+          </section>
+          <section class="content">
+            <p>
+              Here are is a list of some of the libraries and frameworks I've
+              learned and focus on:
+            </p>
+            <div class="container">
+              <img
+                src="https://img.icons8.com/color/48/000000/html-5--v1.png"
+                alt="HTML"
+                title="HTML"
+              />
+              <img
+                src="https://img.icons8.com/color/64/000000/css3.png"
+                alt="CSS3"
+                title="CSS3"
+              />
+              <img
+                src="https://img.icons8.com/color/48/000000/javascript--v1.png"
+                alt="JavaScript"
+                title="JavaScript"
+              />
+              <img
+                src="https://img.icons8.com/color/48/000000/react-native.png"
+                alt="React JS"
+                title="React JS"
+              />
+              <img
+                src="https://img.icons8.com/color/48/000000/nodejs.png"
+                alt="NodeJS"
+                title="NodeJS"
+              />
+              <img
+                src="https://img.icons8.com/color/48/000000/apollo.png"
+                alt="Apollo Server"
+                title="Apollo Server"
+              />
+              <img
+                src="https://img.icons8.com/color/48/000000/graphql.png"
+                alt="GraphQL"
+                title="GraphQL"
+              />
+              <img
+                src="https://img.icons8.com/color/48/000000/mysql-logo.png"
+                alt="MySQL"
+                title="MySQL"
+              />
+              <img
+                src="https://img.icons8.com/color/48/000000/mongodb.png"
+                alt="MongoDB"
+                title="MongoDB"
+              />
+            </div>
+            <div class="info-text">
+              <span title="Icons are from https://icons8.com/">
+                Icons are from
+                <a href="https://icons8.com/">https://icons8.com/</a></span
               >
-            </li>
-            <li>
-              <label for="linkedIn">Linked In:</label>
-              <a
-                id="linkedIn"
-                href="https://www.linkedin.com/in/chiplong1/"
-                target="_blank"
-                rel="noopener"
-                >chiplong1</a
-              >
-            </li>
-          </ul>
+            </div>
+          </section>
         </section>
-      </section>
-    </main>
-    <!-- No footer included at this time -->
+        <!-- Project section -->
+        <!-- Don't forget to specify the project name and types -->
+        <section id="myWork" class="primary container myWork">
+          <section class="heading container">
+            <h2>My Work</h2>
+            <div class="bar"></div>
+          </section>
+          <section class="content container">
+            <div title="Shop-A-Lot" class="project">
+              <!-- images  -->
+              <img
+                src="./assets/images/shopalot/homepage(logged_out).jpg"
+                alt="Shop-A-Lot e-commerce site"
+                data-repeat="true"
+                data-show-0="./assets/images/shopalot/homepage(logged_out).jpg"
+                data-show-1="./assets/images/shopalot/signup.jpg"
+                data-show-2="./assets/images/shopalot/login.jpg"
+                data-show-3="./assets/images/shopalot/homepage(logged_in).jpg"
+                data-show-4="./assets/images/shopalot/category.jpg"
+                data-show-5="./assets/images/shopalot/product.jpg"
+                data-show-6="./assets/images/shopalot/cart.jpg"
+                data-show-7="./assets/images/shopalot/backpack.jpg"
+              />
+              <!-- project details -->
+              <div class="img-text">
+                <p class="project-name">Shop-A-Lot</p>
+                <p class="technologies">
+                  CSS, Javascript, NodeJS, Express, Sequelize, Handlebars,
+                  bCrypt, NodeMail, Group Project
+                </p>
+                <div class="github">
+                  <a
+                    title="https://github.com/Chip-L/shop-a-lot"
+                    href="https://github.com/Chip-L/shop-a-lot"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    See the repository!
+                  </a>
+                </div>
+                <div class="web">
+                  <a
+                    title="https://shop-a-lot.herokuapp.com/"
+                    href="https://shop-a-lot.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    See it live!
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div title="code quiz" class="project">
+              <!-- images  -->
+              <img
+                src="./assets/images/jsCodeQuiz/OpeningScreenScreenshot.jpg"
+                alt="Javascript Code Quiz webpage image"
+                data-repeat="true"
+                data-show-0="./assets/images/jsCodeQuiz/OpeningScreenScreenshot.jpg"
+                data-show-1="./assets/images/jsCodeQuiz/JSQuizScreenshot.jpg"
+                data-show-2="./assets/images/jsCodeQuiz/GameOverScreenshot.jpg"
+                data-show-3="./assets/images/jsCodeQuiz/HighScoresScreenshot.jpg"
+              />
+              <!-- project details -->
+              <div class="img-text">
+                <p class="project-name">Javascript Code Quiz</p>
+                <p class="technologies">CSS, Javascript</p>
+                <div class="github">
+                  <a
+                    title="https://github.com/Chip-L/jsCodeQuiz"
+                    href="https://github.com/Chip-L/jsCodeQuiz"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    See the repository!
+                  </a>
+                </div>
+                <div class="web">
+                  <a
+                    title="https://chip-l.github.io/jsCodeQuiz/"
+                    href="https://chip-l.github.io/jsCodeQuiz/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    See it live!
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div title="Joke Trivia" class="project">
+              <!-- images  -->
+              <img
+                src="./assets/images/JokeTrivia/joke-trivia-still.jpg"
+                data-gif="true"
+                data-still="./assets/images/JokeTrivia/joke-trivia-still.jpg"
+                data-active="./assets/images/JokeTrivia/joke-trivia-demo.gif"
+                alt="Joke Trivia webpage image"
+              />
+              <!-- project details -->
+              <div class="img-text">
+                <p class="project-name">Joke Trivia</p>
+                <p class="technologies">
+                  jQuery, Bootstrap, API, Group Project
+                </p>
+                <div class="github">
+                  <a
+                    title="https://github.com/Chip-L/jokeTrivia/"
+                    href="https://github.com/Chip-L/jokeTrivia/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    See the repository!
+                  </a>
+                </div>
+                <div class="web">
+                  <a
+                    title="https://chip-l.github.io/jokeTrivia/"
+                    href="https://chip-l.github.io/jokeTrivia/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    See it live!
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div title="Weather Dashboard" class="project">
+              <img
+                src="./assets/images/weatherDashboard.jpg"
+                alt="Weather Dashboard webpage image"
+              />
+              <div class="img-text">
+                <p class="project-name">Weather Dashboard</p>
+                <p class="technologies">jQuery, Bootstrap, API</p>
+                <div class="github">
+                  <a
+                    title="https://github.com/Chip-L/weatherDashboard/"
+                    href="https://github.com/Chip-L/weatherDashboard/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    See the repository!
+                  </a>
+                </div>
+                <div class="web">
+                  <a
+                    title="https://chip-l.github.io/weatherDashboard/"
+                    href="https://chip-l.github.io/weatherDashboard/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    See it live!
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div title="match game" class="project">
+              <img
+                src="./assets/images/MatchGame.jpg"
+                alt="Match Game webpage image"
+              />
+              <div class="img-text">
+                <p class="project-name">Match Game</p>
+                <p class="technologies">Javascript</p>
+                <div class="github">
+                  <a
+                    title="https://github.com/Chip-L/Match_Game"
+                    href="https://github.com/Chip-L/Match_Game"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    See the repository!
+                  </a>
+                </div>
+                <div class="web">
+                  <a
+                    title="https://chip-l.github.io/Match_Game/"
+                    href="https://chip-l.github.io/Match_Game/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    See it live!
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
 
+        <!-- This is Contact Me section -->
+        <section id="contactMe" class="primary container contactMe">
+          <section class="heading container">
+            <h2>Contact Me</h2>
+            <div class="bar"></div>
+          </section>
+          <section class="content container">
+            <ul class="container">
+              <li>
+                <label for="phone">Phone:</label>
+                <a id="phone" href="tel:7202894751">720-289-4751</a>
+              </li>
+              <li>
+                <label for="email">Email:</label>
+                <a id="email" href="#">chip_long@yahoo.com</a>
+              </li>
+              <li>
+                <label for="github"> Github:</label>
+                <a
+                  id="github"
+                  href="https://github.com/Chip-L/"
+                  target="_blank"
+                  rel="noopener"
+                  >Chip-L</a
+                >
+              </li>
+              <li>
+                <label for="linkedIn">Linked In:</label>
+                <a
+                  id="linkedIn"
+                  href="https://www.linkedin.com/in/chiplong1/"
+                  target="_blank"
+                  rel="noopener"
+                  >chiplong1</a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </main>
+      <!-- No footer included at this time -->
+    </div>
     <!-- -  -  -  -  -  -  -  -  -  Scripts   -  -  -  -  -  -  -  -  - -->
     <!-- jQuery -->
     <script

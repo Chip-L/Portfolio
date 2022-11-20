@@ -28,23 +28,21 @@ html {
 }
 
 body {
-  /* make a flex container */
-  display: flex;
-  /* show items vertically -- these are the main containers */
-  flex-direction: column;
+  width: 100%;
+  margin: 0;
 
-  /* set up the screen */
-  width: 100%; /* use entire screen */
-  margin: 0; /* no margins */
-
-  /* set default colors */
   color: var(--secondary);
   background-color: var(--bgColor);
 
-  /* set default fonts */
   font-family: "Noto Sans", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.6rem;
   line-height: 2.4rem;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 /*********************************** Header ***********************************/
@@ -118,16 +116,6 @@ nav .bar {
   flex: 2;
 }
 
-.aboutMe .info-text {
-  font-size: 0.75rem;
-  text-align: right;
-}
-
-.info-text a {
-  text-decoration: underline;
-  color: blue;
-}
-
 /**** About Me ****/
 .aboutMe p {
   text-indent: 3rem;
@@ -142,6 +130,17 @@ nav .bar {
 .mySkills img {
   padding: 0.25rem;
   height: 48px;
+}
+
+.info-text {
+  font-size: 0.75rem;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.info-text a {
+  text-decoration: underline;
+  color: blue;
 }
 
 /**** My Work ****/
@@ -171,7 +170,7 @@ nav .bar {
   color: var(--primary);
   background-color: var(--highlight);
   padding: 1rem;
-  padding-left: 5rem;
+  padding-left: 2.5rem;
   max-width: 75%;
 }
 
@@ -330,6 +329,10 @@ nav .bar {
     padding: 1rem 0;
   }
 
+  .page {
+    width: 1200px;
+  }
+
   .logo {
     padding-left: 3rem;
     color: var(--primary);
@@ -400,6 +403,10 @@ nav .bar {
     border-radius: 0.4rem;
     scroll-margin-top: 10rem;
     flex-direction: row;
+  }
+
+  .aboutMe p {
+    padding: 0.025rem 1.25rem;
   }
 
   .myWork .content {
